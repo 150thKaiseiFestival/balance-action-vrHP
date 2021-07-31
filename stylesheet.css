@@ -188,8 +188,8 @@ header {
   /*ハンバーガーメニュー*/
   .h-menu_icon {
       display: inline-block;
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       vertical-align: middle;
   }
   
@@ -247,6 +247,7 @@ header {
   /*チェックボックスにチェックが入ったら表示*/
   input:checked ~ .h-menu_icon .hamburger-icon{
       background: transparent;
+      height: 30px;
   }
   input:checked ~ .h-menu_icon .hamburger-icon::before{
       -webkit-transform: rotate(-45deg);
