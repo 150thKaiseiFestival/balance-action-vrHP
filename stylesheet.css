@@ -1,4 +1,4 @@
-.menu-item {
+ .menu-item {
     list-style: none;
     display: inline-block;
     padding: 10px;
@@ -15,27 +15,44 @@
     position:relative;
   }
 
+
   .top_logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
     position: absolute;
-    top: 35%;
-    left: 42%;
+    top: 33%;
+    left: 30%;
+
+    animation-name: fadeup;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  @keyframes fadeup{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
   }
 
   body{
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
       font-size: 20px;
-      background:rgb(215, 215, 215);
       background-position: 50% 50%;
       background-size: cover;
       -webkit-appearance: none;
       -webkit-text-size-adjust: 100%;
       padding: 0;
       margin: 0;
+      overflow-x: hidden;
+  }
+
+  .spike{
+    background-image: url("spikes.png");
+    background-repeat: repeat;
+    padding-bottom: 30px;
   }
 
   .top_massage{
@@ -64,6 +81,10 @@
     font-size: 30px;
     height: 100px;
   }
+
+  .about h2{
+    padding-left: 50px;
+  }
   
   .aboutcontent1{
     display: flex;
@@ -72,25 +93,47 @@
   }
 
   .syokaiimg1{
-    width: 55vw;
-    height: 100vh;
     margin-bottom: 0;
     margin-top: 0;
+    margin-left: 5vw;
+    height: auto;
+  }
+  .syokaiimg1 img{
+    width: 50vw;
+    height: 75vh;
   }
 
   .syokaibun1{
-    margin-top: 20vh;
+    margin-top: 15vh;
+    margin-right: 5vw;
     background: white;
-    width: 45vw;
-    height: 80vh;
+    width: 40vw;
+    height: 60vh;
     margin-bottom: 0;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+  }
+
+  .syokaibun1 p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .syokaibun1 h2{
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: solid 5px black;
   }
 
   .siro1{
-    width: 55vw;
-    height: 20vh;
+    margin-right: 5vw;
+    height: 15vh;
     margin-left: 45vw;
     background: white;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    margin-top: -1em;
   }
 
   .aboutcontent2{
@@ -101,35 +144,58 @@
   }
 
   .syokaiimg2{
-    width: 55vw;
-    height: 100vh;
+    margin-right: 5vw;
     margin-bottom: 0;
     margin-top: 0;
+    height: auto;
+  }
+  .syokaiimg2 img{
+    width: 50vw;
+    height: 75vh;
   }
 
   .syokaibun2{
-    margin-top: 20vh;
+    margin-top: 15vh;
     background: white;
-    width: 45vw;
-    height: 80vh;
+    width: 40vw;
+    margin-left: 5%;
+    height: 60vh;
     margin-bottom: 0;
+    border-top: solid 1px black;
+    border-left: solid 1px black;
+  }
+
+  .syokaibun2 p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .syokaibun2 h2{
+    margin-left: 20px;
+    border-left: solid 5px black;
+    padding-left: 10px;
   }
 
   .siro2{
-    width: 55vw;
-    height: 20vh;
+    margin-left: 5%;
+    margin-right: 45%;
+    height: 15vh;
     background: white;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    border-right: solid 1px black;
+    margin-top: -1em;
   }
   
 
   .hello_top{
     margin-top: 75px;
     border-bottom: solid 2px black;
-    width: 750px;
     text-align: left;
     margin-left: 50px;
     font-size: 30px;
     height: 60px;
+    padding-left: 50px;
   }
   
   .hellocontent{
@@ -140,7 +206,8 @@
 
   .hello{
     background-color: white;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: 0;
     padding-bottom: 20px;
   }
 
@@ -152,6 +219,7 @@
     margin-left: 150px;
     font-size: 30px;
     height: 60px;
+    padding-left: 50px;
   }
   
   .positioncontent{
@@ -165,10 +233,9 @@
     margin-right: 300px;
     padding-bottom: 20px;
     margin-top: 30px;
-    margin-bottom: 30px;
   }
 
-header {
+  header {
     padding: 16px;
     background: rgba(31,44,55,0.5);
     position: fixed;
@@ -192,7 +259,7 @@ header {
       height: 35px;
       vertical-align: middle;
   }
-  
+
   /*3本線*/
   .hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
       content: '';
@@ -310,4 +377,140 @@ header {
 footer p{
     color: white;
     font-size: 10px;
+}
+
+@media screen and (min-width: 480px){
+  .br-pc{display: block;}
+  .br-sp{display: none;}
+}
+
+@media screen and (max-width: 480px){
+  .br-pc{display: none;}
+  .br-sp{display: block;}
+
+  h2{font-size: 25px;
+  margin: 0;}
+  p{font-size: 15px;}
+
+  .TOP_title{
+    font-size: 25px;
+  }
+
+  .top_logo img{
+    width: 300px;
+    height: 75px;
+  }
+
+  .top_logo{
+    top: 43%;
+    left: 10%;
+  }
+
+  .top_back{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .top_massage{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 300px;
+  }
+
+  .top_massage p{
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .midasi{
+    font-size: 25px;
+    padding-top: 40px;
+  }
+
+  .about{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 80vw;
+  }
+
+  .about h2{
+    padding-left: 20px;
+  }
+
+  .siro1{display: none;}
+  .siro2{display: none;}
+
+  .aboutcontent1{display: block;}
+  .aboutcontent2{display: block;}
+
+  .syokaiimg1 img{
+    width: 95vw;
+    height: 40vh;
+  }
+  .syokaiimg1{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .syokaiimg2 img{
+    width: 95vw;
+    height: 40vh;
+  }
+  .syokaiimg2{
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+  }
+
+  .hello_top{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    height: auto;
+    padding-left: 20px;
+    width: 80vw;
+  }
+  
+  .hellocontent{
+    margin-right: 200px;
+    height: 200px;
+    padding-left: 20px;
+  }
+
+  .hello{
+    background-color: white;
+    margin-left: auto;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .position_top{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+    height: auto;
+    padding-left: 20px;
+    width: 80vw;
+  }
+  
+  .positioncontent{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .position{
+    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  footer{
+    height: 50px;
+  }
+  footer img{width: 10%;
+    height:10%;}
+
+
+
 }
