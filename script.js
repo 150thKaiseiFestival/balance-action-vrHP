@@ -1,10 +1,12 @@
 
 $(function() {
+  var windowWidth = $(window).width();
+  if(480<=windowWidth){
   $(window).scroll(function() {
     var scroll = $(this).scrollTop();
     var height = $("body").outerHeight(true);
-    var scpoint1 = (scroll/height)*100-5;
-    var scpoint2 = (scroll/height)*100-15;
+    var scpoint1 = (scroll/height)*100+5;
+    var scpoint2 = (scroll/height)*100-5;
     if (scpoint1>0 && scpoint1<=80){
       $(".hello").css("width",scpoint1+"%")
     }
@@ -13,5 +15,6 @@ $(function() {
    }
    console.log(scpoint1);
   });
+  }
 
 });
