@@ -1,4 +1,5 @@
- .menu-item {
+
+  .menu-item {
     list-style: none;
     display: inline-block;
     padding: 10px;
@@ -447,19 +448,57 @@ footer p{
   .syokaiimg1 img{
     width: 95vw;
     height: 40vh;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
   }
   .syokaiimg1{
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    height: 40vh;
+  }
+
+  .syokaibun1{
+    margin-top: 0;
+    margin-right: 2.5vw;
+    margin-left: 2.5vw;
+    background: white;
+    width: 95vw;
+    height: 45vh;
+    margin-bottom: 0;
+    border-top: none;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
+    border-bottom: solid 1px black;
+    padding-top: 10px;
   }
 
   .syokaiimg2 img{
     width: 95vw;
     height: 40vh;
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    border-left: solid 1px black;
   }
   .syokaiimg2{
     margin-left: 2.5vw;
     margin-right: 2.5vw;
+    height: 40vh;
+  }
+
+  .syokaibun2{
+    margin-top: 0;
+    background: white;
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    height: 60vh;
+    margin-bottom: 0;
+    border-top: none;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    padding-top: 10px;
   }
 
   .hello_top{
@@ -472,8 +511,8 @@ footer p{
   }
   
   .hellocontent{
-    margin-right: 200px;
-    height: 200px;
+    margin-right: 10px;
+    height: 150px;
     padding-left: 20px;
   }
 
@@ -506,7 +545,7 @@ footer p{
   }
 
   footer{
-    height: 50px;
+    height: 75px;
   }
   footer img{width: 10%;
     height:10%;}
