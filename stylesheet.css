@@ -120,6 +120,10 @@
     margin-right: 2.5vw;
   }
 
+.aboutcontent1 h2{font-size:40px;}
+
+.aboutcontent2 h2{font-size:40px;}
+
   .syokaiimg1{
     margin-bottom: 0;
     margin-top: 0;
@@ -521,7 +525,7 @@ footer p{
   .top_massage{
     padding-left: 5%;
     padding-right: 5%;
-    height: 300px;
+    height: 350px;
   }
 
   .top_massage p{
@@ -581,6 +585,7 @@ footer p{
   .syokaibun2{
     width: 100vw;
     padding-bottom: 20px;
+    height: auto;
   }
 
   .hello_top{
@@ -632,7 +637,8 @@ footer p{
   footer img{width: 10%;
     height:10%;}
 
-  body{overflow-x: hidden;}
+  html{width:100vw;
+    overflow-x: hidden;}
 
   .h-menu{margin-left: 80vw;}
 
