@@ -538,12 +538,12 @@ footer p{
   }
 
   .top_massage p{
-    font-size: 11px;
+    font-size: 15px;
     margin: 0;
   }
 
   .midasi{
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 40px;
   }
 
@@ -586,6 +586,7 @@ footer p{
     padding-top: 0;
     height:auto;
   }
+  .syu_h4{font-size:20px;}
   .syokaiimg2 img{
     width: 95vw;
   }
